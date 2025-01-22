@@ -36,7 +36,7 @@ canvas {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem 1rem 4.5rem;
+    padding: 1rem 2rem 6rem 4.5rem;
 }
 .logo {
     display: flex;
@@ -72,6 +72,9 @@ main {
     font-size: 4.01rem;
     margin: 0;
     padding: 2rem 0 2rem 0;
+}
+.genre-items {
+    letter-spacing: 1px;
 }
 .genre-items h3 {
     font-size: 1.75rem;
@@ -116,6 +119,7 @@ main {
 }
 .buttons {
     display: flex;
+    flex-wrap: wrap;
 }
 .btn {
     display: flex;
