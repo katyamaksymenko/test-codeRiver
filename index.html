@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Bubbles Background</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Charis+SIL:ital,wght@0,400;0,700;1,400;1,700&family=Croissant+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mooli&family=Mukta:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <canvas></canvas>
+    <div class="container">
+        <header>
+            <nav class="navbar">
+                <a href="https://www.netflix.com/ua/">
+                    <div class="logo">
+                        <img src="./imgs/logo.png" alt="logo">
+                        <img src="./imgs/line.png" alt="line">
+                        <span>Friday July 8th</span>
+                    </div>
+                </a>
+                <ul class="nav-items">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <img src="./imgs/fe_search.png" alt="search">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.netflix.com/login" class="nav-link">
+                            <img src="./imgs/avatar.png" alt="avatar">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="film">
+                <ul class="genre-items">
+                    <li class="genre-item">
+                        <h3>Drama</h3>
+                        <img src="./imgs/line.png" alt="line">
+                    </li>
+                    <li class="genre-item">
+                        <h3>Thriller</h3>
+                        <img src="./imgs/line.png" alt="line">
+                    </li>
+                    <li class="genre-item">
+                        <h3>Supernatural</h3>
+                        <img src="./imgs/line.png" alt="line">
+                    </li>
+                </ul>
+                <h1>Stranger Things</h1>
+                <ul class="info-items">
+                    <li class="info-item">
+                        <h3>2019</h3>
+                        <img src="./imgs/line.png" alt="line">
+                    </li>
+                    <li class="info-item">
+                        <h3>DIRECTOR:
+                            <span class="secondary-text">Shawn Levy</span>
+                        </h3>
+                        <img src="./imgs/line.png" alt="line">
+                    </li>
+                    <li class="info-item">
+                        <h3> seasons:
+                            <span class="secondary-text">3 (5 Episodes)</span>
+                        </h3>
+                        <img src="./imgs/line.png" alt="line">
+                    </li>
+                </ul>
+                <p class="info">
+                    In 1980s Indiana, a group of young friends witness supernatural forces and secret
+                    government exploits. As they search for answers, the children unravel a series of
+                    extraordinary mysteries.
+                </p>
+                <div class="rate">
+                    <img src="./imgs/stars.png" alt="stars">
+                </div>
+                <div class="buttons">
+                    <button class="btn">
+                        STREAM NOW
+                        <img src="./imgs/play.png" alt="play">
+                    </button>
+                    <button class="btn">
+                        ALL EPISODES
+                    </button>
+                </div>
+            </section>
+            <section class="carousel-container">
+                <div class="items">
+                    <h4>POPULAR THIS WEEK</h4>
+                    <div>
+                        <button class="carousel-button prev">
+                            <svg viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="19" cy="19" r="18.2875" transform="rotate(-180 19 19)" stroke="#A7A6A6" stroke-width="1.425"/>
+                                <path d="M21.6916 27.075L23.5892 25.1774L17.4253 19L23.5892 12.8226L21.6916 10.925L13.6166 19L21.6916 27.075Z" fill="#A7A6A6"/>
+                            </svg>
+                        </button>
+                        <button class="carousel-button next">
+                            <svg viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="20.5" cy="20.5" r="19.7313" stroke="#A7A6A6" stroke-width="1.5375"/>
+                                <path d="M17.5959 11.7875L15.5485 13.8349L22.199 20.5L15.5485 27.1651L17.5959 29.2125L26.3084 20.5L17.5959 11.7875Z" fill="#A7A6A6"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="carousel-track">
+                    <div class="carousel-image">
+                        <img alt="film6" data-tab="film6" src="./imgs/film3.png" />
+                    </div>
+                    <div class="carousel-image">
+                        <img alt="film" data-tab="film" src="./imgs/film.png" />
+                    </div>
+                    <div class="carousel-image">
+                        <img alt="film1" data-tab="film1" src="./imgs/film1.png" />
+                    </div>
+                    <div class="carousel-image">
+                        <img alt="film2" data-tab="film2" src="./imgs/film2.png" />
+                    </div>
+                    <div class="carousel-image">
+                        <img alt="film3" data-tab="film3" src="./imgs/film3.png" />
+                    </div>
+                    <div class="carouselImage">
+                        <img alt="film5" data-tab="film5" src="./imgs/film5.png" />
+                    </div>
+
+                </div>
+
+
+<!--                    <div class="age">-->
+<!--                        <span></span><span>16+</span>-->
+<!--                    </div>-->
+            </section>
+    </main>
+</div>
+<script src="./script.js"></script>
+</body>
+</html>
