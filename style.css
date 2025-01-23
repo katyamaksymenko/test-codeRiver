@@ -154,6 +154,12 @@ main {
     width: 60%;
     overflow: hidden;
 }
+
+.slider-age {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .age {
     font-size: 1.5rem;
 }
@@ -229,4 +235,14 @@ main {
 .next:hover path,
 .prev:hover path {
     fill: white;
+}
+@media screen and (max-width: 1280px) {
+    .carousel-container {
+        width: 70%;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .carousel-container {
+        width: 80%;
+    }
 }
